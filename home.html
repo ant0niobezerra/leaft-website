@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratório de Energia Alternativa e Fenômenos de Transportes - LEAFT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        .navbar {
+            background-color: #ffffff;
+            color: #666;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1em;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .navbar a {
+            color: #666;
+            margin: 0 1em;
+            text-decoration: none;
+            font-weight: 600;
+        }
+        .navbar a:hover {
+            color: #3c763d;
+        }
+        .header {
+            background-color: #3c763d;
+            color: #fff;
+            padding: 2em;
+            text-align: center;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        .header p {
+            margin: 0.5em 0 0;
+            font-size: 1.1em;
+        }
+        .sections {
+            display: flex;
+            justify-content: space-around;
+            padding: 2em;
+            flex-wrap: wrap;
+        }
+        .section {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 1em;
+            padding: 1.5em;
+            width: 30%;
+            text-align: center;
+        }
+        .section h2 {
+            color: #3c763d;
+        }
+        .section p {
+            font-size: 0.9em;
+        }
+        .research-lines {
+            padding: 2em;
+            text-align: center;
+            margin: 2em 0;
+            background-color: #f1f1f1; /* Cor de fundo suave */
+            border-radius: 8px;
+        }
+        .research-lines h3 {
+            font-size: 1.5em;
+            color: #3c763d;
+            margin-bottom: 1em;
+        }
+        .research-boxes {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .research-box {
+            border: 1.5px solid #3c763d;
+            border-radius: 8px;
+            padding: 1em;
+            width: 45%;
+            box-sizing: border-box;
+            text-align: left;
+            background-color: #f1f1f1; /* Cor de fundo das caixas */
+        }
+        .research-box h4 {
+            margin: 0;
+            color: #3c763d;
+            font-size: 1.2em;
+            margin-bottom: 0.5em;
+        }
+        .research-box p {
+            font-size: 0.9em;
+            color: #333;
+        }
+        @media (max-width: 768px) {
+            .section {
+                width: 90%;
+            }
+            .research-box {
+                width: 90%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="navbar">
+        <a href="{% url 'equipe' %}">Conheça nossa equipe</a>
+        <a href="{% url 'publicacoes' %}">Publicações</a>
+        <a href="{% url 'contato' %}">Entre em contato conosco</a>
+    </div>
+
+    <div class="header">
+        <h1>Laboratório de Energia Alternativa e Fenômenos de Transportes - LEAFT</h1>
+        <p>O LEAFT atua em pesquisas de tecnologias sustentáveis, conversão de energia e captura de carbono.</p>
+    </div>
+ 
+    <div class="sections">
+        <div class="section">
+            <h2>Desenvolvimento</h2>
+            <p>O LEAFT foca na produção de combustíveis renováveis para reduzir as emissões de gases de efeito estufa e diminuir a dependência de combustíveis fósseis.</p>
+        </div>
+        <div class="section">
+            <h2>Pesquisas</h2>
+            <p>As pesquisas do LEAFT incluem a valorização de biomassas e a melhoria dos processos de captura e utilização de carbono em escala industrial.</p>
+        </div>
+        <div class="section">
+            <h2>Publicações</h2>
+            <p>Explore nossas publicações científicas e saiba mais sobre os avanços nas tecnologias de energia sustentável e captura de carbono.</p>
+        </div>
+        <div class="section">
+            <h2>Parcerias</h2>
+            <p>O LEAFT trabalha em colaboração com várias instituições e empresas para expandir suas pesquisas e implementar tecnologias de impacto.</p>
+        </div>
+    </div>
+
+    <div class="research-lines">
+        <h3>Principais Linhas de Pesquisa</h3>
+        <div class="research-boxes">
+            <div class="research-box">
+                <h4>Biomassa</h4>
+                <p>Pesquisa de métodos para converter biomassas em fontes renováveis de energia e produtos químicos, contribuindo para a sustentabilidade energética.</p>
+            </div>
+            <div class="research-box">
+                <h4>Valorização da Lignina</h4>
+                <p>Desenvolvimento de técnicas para utilizar a lignina, um subproduto da biomassa, em novos materiais e biocombustíveis, aumentando seu valor comercial.</p>
+            </div>
+            <div class="research-box">
+                <h4>Microfluidos</h4>
+                <p>Estudo de sistemas microfluídicos para otimizar processos químicos em pequena escala, facilitando a pesquisa em química e biotecnologia.</p>
+            </div>
+            <div class="research-box">
+                <h4>Captura e Utilização de Carbono (CCUS)</h4>
+                <p>Desenvolvimento de tecnologias para capturar e utilizar o CO₂, ajudando a reduzir emissões e promover a sustentabilidade ambiental.</p>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
